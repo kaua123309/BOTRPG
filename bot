@@ -1,0 +1,16 @@
+import pyautogui
+from time import sleep
+comandos = input('')
+
+if comandos == '/init':
+    sleep(5)
+    pyautogui.typewrite('bot iniciado')
+    pyautogui.press('enter')
+
+if comandos == '/ficha':
+    sleep(5)
+    pyautogui.typewrite('nome :')
+    pyautogui.typewrite('idade :')
+    pyautogui.typewrite('classe :')
+    pyautogui.typewrite('aparencia :')
+    pyautogui.press('enter')
